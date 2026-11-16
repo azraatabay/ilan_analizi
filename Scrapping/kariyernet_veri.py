@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 BASE = "https://www.kariyer.net"
 SEARCH_URL = "https://www.kariyer.net/is-ilanlari/bilgisayar-muhendisi?pst=313&pkw=bilgisayar%20m%C3%BChendisi"
 PAGE_PARAM = "cp"      # 2. sayfaya geçince URL'ye bakıp doğrulayın
-MAX_PAGES = 1          # önce 1 ile test edin, sonra artırın
+MAX_PAGES = 3          # önce 1 ile test edin, sonra artırın
 OUTPUT = "ilanlar.csv"
 headers = {"User-Agent": "Mozilla/5.0"}
 
