@@ -270,14 +270,14 @@ if n < 5:
 
 # 4) teknik yetkinlik çubukları
 yaz(['<div class="sec">Teknik yetkinlikler <small>en çok aranan tech stack</small></div>'])
+kaydirici, _bos = st.columns([2, 3])
+with kaydirici:
+    adet = st.slider("Gösterilecek beceri sayısı", 5, 20, 10)
 sol, sag = st.columns([3, 2])
 with sol:
-    adet = st.slider("Gösterilecek beceri sayısı", 5, 20, 10)
     yaz([cubuklar("En çok aranan teknolojiler",
                   "Yüzde = o beceriyi isteyen ilanların seçili ilanlara oranı", sayac, n, adet, "f1")])
 with sag:
-    st.write("")
-    st.write("")
     yaz([cubuklar("Öne çıkan sosyal beceriler", "Benzer ifadeler gruplanarak sayıldı",
                   ao.sosyal_say(df), n, 6, "f2")])
     seviyeler = ao.seviye_say(df)
