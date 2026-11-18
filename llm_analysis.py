@@ -13,11 +13,11 @@ load_dotenv(os.path.join(KLASOR, ".env"))
 GIRDI = os.path.join(KLASOR, "ilanlar_son.csv")
 CIKTI = os.path.join(KLASOR, "analiz_sonuclari.csv")
 CACHE = os.path.join(KLASOR, "llm_cache.json")
-MODEL = "gemini-2.5-flash"
-TEST_N = 3          # önce 3 ilan; hepsini çalıştırmak için None yapın
+MODEL = "gemini-3.5-flash-lite"
+TEST_N = None          # önce 3 ilan; hepsini çalıştırmak için None yapın
 BEKLEME = 4         # istekler arası saniye
 
-client = genai.Client()
+client = genai.Client(http_options=types.HttpOptions(timeout=60000))
 
 PROMPT = """
 Aşağıdaki iş ilanını analiz et ve şu alanları JSON olarak döndür:
