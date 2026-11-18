@@ -1,0 +1,161 @@
+{
+  "Tümü": {
+    "sektor_ne_bekliyor": "İlanlarda .NET, C#, SQL ve Git teknolojileri en çok aranan yetkinlikler olarak öne çıkmaktadır. Adaylardan genellikle orta düzeyde deneyim beklenirken, her iki ilandan birinden fazlasında İngilizce şartı aranmaktadır.",
+    "one_cikanlar": [
+      ".NET ekosistemi ve C# programlama dili temel zorunluluktur.",
+      "Git ve SQL veritabanı yönetimi yaygın olarak talep edilmektedir.",
+      "Adayların çoğunda orta seviye veya iyi derecede İngilizce beklenmektedir."
+    ],
+    "yol_haritasi": [
+      {
+        "donem": "1-2. ay",
+        "baslik": "Temel Teknolojiler",
+        "aciklama": "C# ve .NET ekosistemi üzerine çalışarak temel programlama yetkinliklerini geliştirin."
+      },
+      {
+        "donem": "3-4. ay",
+        "baslik": "Veri ve Versiyon Kontrolü",
+        "aciklama": "SQL ve MSSQL ile veritabanı yönetimi öğrenin, Git kullanımında pratik yapın."
+      },
+      {
+        "donem": "5-6. ay",
+        "baslik": "Mimari ve Servisler",
+        "aciklama": "REST API geliştirme ve mikroservis mimarileri konusunda projeler üretin."
+      },
+      {
+        "donem": "sonrası",
+        "baslik": "Dil ve Takım Çalışması",
+        "aciklama": "Teknik İngilizce becerilerinizi geliştirin ve takım çalışması odaklı projelerde yer alın."
+      }
+    ],
+    "ilan_sayisi": 43
+  },
+  "Yazılım Mühendisi": {
+    "sektor_ne_bekliyor": "Yazılım mühendisliği ilanlarında Java, JavaScript ve SQL gibi temel teknolojilerin yanı sıra Docker ve CI/CD gibi modern araçlar öne çıkmaktadır. Adayların ortalama 2 yıl deneyimli olması beklenirken, İngilizce bilgisi de kritik bir kriter olarak yer almaktadır.",
+    "one_cikanlar": [
+      "Java, JavaScript ve SQL dillerinde yetkinlik kazanılmalıdır.",
+      "Docker ve CI/CD süreçleri öğrenilmelidir.",
+      "Takım çalışması ve analitik düşünme becerileri geliştirilmelidir.",
+      "Teknik doküman okuyabilecek düzeyde İngilizce çalışılmalıdır."
+    ],
+    "yol_haritasi": [
+      {
+        "donem": "1-2. ay",
+        "baslik": "Temel Programlama ve Veritabanı",
+        "aciklama": "Java, JavaScript ve SQL konularına odaklanarak temel yazılım ve veri tabanı becerilerini güçlendirin."
+      },
+      {
+        "donem": "3-4. ay",
+        "baslik": "Modern Araçlar ve Versiyon Kontrolü",
+        "aciklama": "Git ile versiyon kontrolü yapmayı öğrenin, Docker ve CI/CD süreçlerini projelerinizde uygulayın."
+      },
+      {
+        "donem": "5-6. ay",
+        "baslik": "Sosyal Beceriler ve Dil Gelişimi",
+        "aciklama": "Problem çözme yeteneğinizi geliştirirken, teknik doküman okuyabilecek seviyede İngilizce çalışın."
+      },
+      {
+        "donem": "Sonrası",
+        "baslik": "Deneyim ve Proje Odaklılık",
+        "aciklama": "Takım çalışmasına yatkınlığınızı gösteren projeler geliştirerek staj veya junior pozisyonlarına başvurun."
+      }
+    ],
+    "ilan_sayisi": 9
+  },
+  "Yazılım Geliştirme Mühendisi": {
+    "sektor_ne_bekliyor": "İlanlarda Git, OOP, PostgreSQL ve TypeScript gibi modern teknolojiler öne çıkmaktadır. Adaylardan ortalama 2.5 yıl deneyim beklenirken, yaklaşık yarısında İngilizce şartı aranmaktadır.",
+    "one_cikanlar": [
+      "Git versiyon kontrol sisteminde uzmanlaşın.",
+      "OOP ve modern teknolojilerle proje geliştirin.",
+      "İngilizce dil becerinizi geliştirin.",
+      "Takım çalışması ve problem çözmeye odaklanın."
+    ],
+    "yol_haritasi": [
+      {
+        "donem": "1-2. ay",
+        "baslik": "Temel Beceriler",
+        "aciklama": "Nesne yönelimli programlama (OOP) temellerini pekiştirin ve Git kullanımını öğrenin."
+      },
+      {
+        "donem": "3-4. ay",
+        "baslik": "Teknoloji Odaklı Geliştirme",
+        "aciklama": "PostgreSQL ve TypeScript gibi öne çıkan teknolojilerle pratik projeler yapın."
+      },
+      {
+        "donem": "5-6. ay",
+        "baslik": "Yabancı Dil ve Süreçler",
+        "aciklama": "İngilizce seviyenizi geliştirin ve CI/CD süreçleri hakkında bilgi edinin."
+      },
+      {
+        "donem": "sonrası",
+        "baslik": "Deneyim ve Başvuru",
+        "aciklama": "Ekip çalışmaları yaparak portföyünüzü güçlendirin ve başvuru sürecine başlayın."
+      }
+    ],
+    "ilan_sayisi": 7
+  },
+  "Yazılım Geliştirme Uzmanı": {
+    "sektor_ne_bekliyor": "İlanlarda .NET teknolojileri, C#, MSSQL ve REST API kullanımı kritik seviyededir. Adayların ortalama 3 yıl deneyimli olması ve iyi düzeyde İngilizce bilmesi beklenmektedir.",
+    "one_cikanlar": [
+      ".NET ve C# ekosistemine tam hakimiyet kurun.",
+      "MSSQL ve Entity Framework ile veri yönetimi öğrenin.",
+      "Takım çalışması ve problem çözme becerilerinizi geliştirin.",
+      "İyi seviyede teknik İngilizce yetkinliği edinin."
+    ],
+    "yol_haritasi": [
+      {
+        "donem": "1-2. ay",
+        "baslik": "Temel Programlama",
+        "aciklama": "C# ve Nesne Yönelimli Programlama (OOP) konularında derinlemesine pratik yapın."
+      },
+      {
+        "donem": "3-4. ay",
+        "baslik": "Veri Tabanı ve Mimari",
+        "aciklama": "MSSQL veritabanı yönetimi ve Entity Framework ORM aracı üzerine projeler geliştirin."
+      },
+      {
+        "donem": "5-6. ay",
+        "baslik": "Web Servisleri",
+        "aciklama": ".NET ortamında REST API servisleri tasarlamayı ve Git ile sürüm kontrolünü öğrenin."
+      },
+      {
+        "donem": "Sonrası",
+        "baslik": "İngilizce ve Deneyim",
+        "aciklama": "Teknik doküman okuma becerilerinizi geliştirerek orta seviye projelere başvurun."
+      }
+    ],
+    "ilan_sayisi": 7
+  },
+  "Yazılım Uzmanı": {
+    "sektor_ne_bekliyor": "İncelenen ilanlar, .NET ve C# ekosistemine odaklanan, bulut süreçlerinde Azure DevOps bilgisi arayan bir yapıya sahiptir. Tüm ilanlarda ileri düzeyde İngilizce şartı koşulmakta olup, medyan minimum deneyim süresi 4 yıldır.",
+    "one_cikanlar": [
+      "C# ve .NET teknolojilerinde yetkinlik",
+      "Azure DevOps ve veri tabanı yönetimi",
+      "İleri düzeyde İngilizce şartı",
+      "Ortalama 4 yıl deneyim beklentisi"
+    ],
+    "yol_haritasi": [
+      {
+        "donem": "1-2. ay",
+        "baslik": "C# ve Nesne Yönelimli Programlama",
+        "aciklama": "C# temellerini ve OOP prensiplerini derinlemesine öğrenin, temel veri tabanı ve MSSQL çalışmalarına başlayın."
+      },
+      {
+        "donem": "3-4. ay",
+        "baslik": ".NET ve Web Servisleri",
+        "aciklama": ".NET çatı teknolojilerini ve REST API geliştirme süreçlerini pratik projelerle pekiştirin."
+      },
+      {
+        "donem": "5-6. ay",
+        "baslik": "Bulut ve Sürüm Kontrolü",
+        "aciklama": "Git ile versiyon kontrol sistemlerini öğrenin ve Azure DevOps temel süreçlerine giriş yapın."
+      },
+      {
+        "donem": "Sonrası",
+        "baslik": "İngilizce ve Deneyim Geliştirme",
+        "aciklama": "Teknik doküman okuma becerinizi geliştirin ve staj veya projelerle sektörel deneyim kazanın."
+      }
+    ],
+    "ilan_sayisi": 5
+  }
+}
