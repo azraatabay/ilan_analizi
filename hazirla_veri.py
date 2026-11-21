@@ -1,8 +1,11 @@
 import os
+import re
+
 import pandas as pd
 
 KLASOR = os.path.dirname(os.path.abspath(__file__))
 GIRDI = os.path.join(KLASOR, "ilan_analizi", "ilanlar.csv")
+EK_GIRDI = os.path.join(KLASOR, "ilan_analizi", "ilanlar_selenium.csv")   # Selenium ile toplananlar (varsa)
 CIKTI = os.path.join(KLASOR, "ilanlar_son.csv")
 HARIC_POZISYON = ["Bilgisayar Montaj Elemanı", "Test Mühendisi"]
 MIN_METIN_UZUNLUK = 100   # bundan kısa ilan metinleri analiz için yetersiz sayılır
@@ -22,6 +25,26 @@ if df is None:
     raise SystemExit("Dosya okunamadı veya 'metin' sütunu yok.")
 
 print("Başlangıç:", len(df), "satır")
+
+# ---------- 1b) Selenium ile toplanan ilanları ekle (varsa) ----------
+# Aynı ilan iki yöntemle de çekilmiş olabilir. Boşluk farklarını yok sayıp metnin
+# ilk 300 karakterine bakarak zaten var olan ilanları eklemiyoruz (çift sayılmasın).
+if os.path.exists(EK_GIRDI):
+    # Eski 'kaynak' sütunu veriyi toplayan kişiyi tutuyorsa 'toplayan' olur
+    if "toplayan" not in df.columns and "kaynak" in df.columns:
+        df = df.rename(columns={"kaynak": "toplayan"})
+
+    ek = pd.read_csv(EK_GIRDI, encoding="utf-8-sig")
+    ek = ek.drop(columns=[c for c in ["url", "kaynak"] if c in ek.columns])
+    ek["toplayan"] = "selenium"
+
+    def _anahtar(t):
+        return re.sub(r"\s+", "", str(t))[:300]
+
+    mevcut = {_anahtar(t) for t in df["metin"].dropna()}
+    yeni = ek[~ek["metin"].map(_anahtar).isin(mevcut)]
+    print(f"Selenium dosyası: {len(ek)} ilan, bunlardan {len(yeni)} tanesi yeni (kalanı zaten vardı)")
+    df = pd.concat([df, yeni], ignore_index=True)
 
 # ---------- 2) Sütunları düzenle ----------
 # Eski 'kaynak' sütunu veriyi toplayan kişiyi tutuyorsa 'toplayan' olur

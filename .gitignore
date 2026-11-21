@@ -1,5 +1,6 @@
 .env
 chrome_profil/
 venv/
+.venv/
 __pycache__/
 llm_cache.json
